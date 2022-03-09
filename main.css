@@ -1,0 +1,103 @@
+#body{
+    position:initial;
+	background: rgba(2, 255, 55, 0.6);
+}
+
+.nav {
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	float:left;
+	text-align: center;
+	width: 60px;
+	height: 50px;
+}
+
+.welcome{
+	display: table;
+	position: inherit;
+	border: 5px solid rgba(150,150,150,1);
+    border-radius: 10px;
+	width: 550px;
+	height: 10%;
+}
+
+
+#form {
+    background: rgba(10,200,200,1);
+	display: table;
+	position: inherit;
+	border: 5px solid rgba(150,150,150,0.5);
+    border-radius: 10px;
+	height: 250px;
+	width: 250px;
+}
+
+
+#form_header {
+	color: rgba(10,90,10,1);
+    font-weight: bold;
+	font-size: 18px;
+}
+
+.formElements {
+	color: rgba(10,90,10,1);
+    font-weight: bold;
+	font-size: 15px;
+	margin: auto;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 60%;
+	padding: 5px;
+}
+
+#search {
+	margin-left: 20px;
+	width: 600px;
+	max-width: 100%;
+	height: 30px;
+}
+
+#centerButton {
+	text-align: center;
+}
+
+a, a:visited, a:hover, a:active {
+	color: rgba(0,255,255,1);
+}
+
+
+/* Tooltip container */
+#tooltip {
+  position: relative;
+  display: inline-block;
+	/*If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+#tooltip #tooltiptext {
+  visibility: hidden;
+  width: 450px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#tooltip:hover #tooltiptext {
+  visibility: visible;
+}
