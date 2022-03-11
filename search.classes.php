@@ -154,7 +154,8 @@ class Affichage extends BDD_Articles {
     }
 
     public function getAll() {
-        $sql = 'SELECT * FROM Billet;';
+        $sql = 'SELECT b.Id_bil, b.Date_bil, b.Titre_bil, b.contenu, c.Id_com, c.date_com, c.auteur_com, c.mail_auteur, c.commentaire FROM Billet as b, Commentaire as c;';
+        
         $stmt = $this->connexion()->prepare($sql);
 
         if (!$stmt->execute()){
@@ -175,6 +176,11 @@ class Affichage extends BDD_Articles {
             echo "\t<td>Date de publication</td>\n";
             echo "\t<td>Titre</td>\n";
             echo "\t<td>Contenu</td>\n";
+            echo "\t<td>Id commentaire</td>\n";
+            echo "\t<td>Date du commentaire</td>\n";
+            echo "\t<td>Auteur</td>\n";
+            echo "\t<td>Mail auteur</td>\n";
+            echo "\t<td>Commentaire</td>\n";
             echo "</tr>\n";
 
             while ( $a_row = mysqli_fetch_row( $result ) )
@@ -186,8 +192,7 @@ class Affichage extends BDD_Articles {
             }
             echo "</div></section>";
         }
-
-        
     }
+
 }
 ?>
